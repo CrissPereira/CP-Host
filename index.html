@@ -12,16 +12,18 @@
 <body>
     <!--MENU-->
     <header>
-        <img src="img/arquivo-de-banco-de-dados.png" alt="Banco de Dados">
-        <nav>
-            <a href="">HOME</a>
-            <a href="">PREÇOS</a>
-            <a href="">CONTATO</a>
-            <a class="button">ENTRAR</a>
+        <img src="img/bancos-de-dados.png" alt="Banco de Dados">
+        <img class="iconi_menu" src="img/barra-de-menu.png" alt="Barra de Menu">
+        <nav class="minimizar">
+            <a href="#home">home</a>
+            <a href="#preco">preços</a>
+            <a href="#contato">contato</a>
+            <a href="#desenvolvedor">desenvolvimento</a>
+            <a href="#" class="button">entrar</a>
         </nav>
     </header>
-    <main>
 
+    <main>
         <!--BANNER-->
         <section id="home">
             <div class="banner">
@@ -60,93 +62,103 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, dicta sapiente nisi expedita
                         totam ab voluptatibus tempora magni exercitationem officia rem, eius consequuntur recusandae
                         ratione, possimus laborum consequatur debitis obcaecati?</p>
-                </div> 
+                </div>
+            </div>
+
+            <!--TÍTULO E PARÁGRAFO DOS PLANOS-->
+            <div class="titulo_planos">
+                <h1>Planos e Preços</h1>
+                <p>Selecione o plano que atende as suas necessidades.</p>
             </div>
 
             <!--PLANOS-->
-            <h1>Planos e Preços</h1>
-            <p>Selecione o plano que atende as suas necessidades.</p>
-
-            <!--BÁSICO-->
             <div class="planos">
+
+                <!--BÁSICO-->
                 <div class="plano">
-                    <p>R$15/mês</p>
-                    <h3>básico</h3>
+                    <h3 class="titulo_plano">básico</h3>
                     <p> 2GB de espaço</p>
                     <p>10 Subdomains</p>
                     <p>25 contas de e-mail</p>
                     <p>C-panel</p>
                     <p>Suporte 24/7</p>
-                    <h3>Saber mais</h3>
+                    <button type="button" class="button">Saber mais</button>
                 </div>
 
                 <!--DEDICADO-->
                 <div class="plano">
-                    <p>R$30/mês</p>
-                    <h3>dedicado</h3>
+                    <h3 class="titulo_plano">dedicado</h3>
                     <p>5GB de espaço</p>
                     <p>20 Subdomains</p>
                     <p>50 contas de e-mail</p>
                     <p>C-panel</p>
                     <p>Suporte 24/7</p>
-                    <h3>Saber mais</h3>
+                    <button type="button" class="button">Saber mais</button>
                 </div>
 
                 <!--DEDICADO PLUS-->
                 <div class="plano">
-                    <p>R$50/mês</p>
-                    <h3>dedicado plus <br> promocional</h3>
+                    <h3 class="titulo_plano">dedicado plus</h3>
                     <p>10GB de espaço</p>
                     <p>100 Subdomains</p>
                     <p>100 contas de e-mail</p>
                     <p>C-panel</p>
                     <p>Suporte 24/7</p>
-                    <h3>Saber mais</h3>
+                    <button type="button" class="button">Saber mais</button>
                 </div>
 
                 <!--CLOUD-->
                 <div class="plano">
-                    <p>R$100/mês</p>
-                    <h3>cloud</h3>
+                    <h3 class="titulo_plano">cloud</h3>
                     <p>20GB de espaço</p>
                     <p>200 Subdomains</p>
                     <p>200 contas de e-mail</p>
                     <p>C-panel</p>
                     <p>Suporte 24/7</p>
-                    <h3>Saber mais</h3>
+                    <button type="button" class="button">Saber mais</button>
                 </div>
             </div>
         </section>
 
         <!--DOMÍNIO-->
         <section id="dominio">
-            <h1>Qual domínio você quer para seu site?</h1>
-            <p>Verifique se o domínio está disponível</p>
-            <input type="text" id="dominio" name="dominio" placeholder="Digite o nome do domínio" required>
-            <button type="submit">Procurar Domínio</button>
+            <div class="dominio">
+                <h1>Qual domínio você quer para seu site?</h1>
+                <p>Verifique se o domínio está disponível</p>
+                <input type="text" id="dominio" name="dominio" placeholder="Digite o nome do domínio" required>
+                <button type="submit">Procurar Domínio</button>
+            </div>
+        </section>
+
+        <!--CONTATO-->
+        <section id="contato">
+            <div class="contato">
+                <h1>Mande uma mensagem</h1>
+                <p>Envie a mensagem, em até 4 horas um especialista entrará em contato.</p>
+                <div class="dados">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </div>
         </section>
     </main>
 
     <footer>
-          <!--CONTATO-->
-        <section id="contato">
-            <h1>Mande uma mensagem</h1>
-            <p>Envie a mensagem, em até 4 horas um especialista entrará em contato.</p>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </section>
-
         <!--DESENVOLVEDOR-->
         <section id="desenvolvedor">
             <h2>Desenvolvido por Cristian Pereira</h2>
             <p>Quer mais informações sobre o desenvolvedor? ou conhecer mais os seus projetos?</p>
             <p>Acesse a baixo:</p>
-            <a href="https://www.linkedin.com/in/cristian-pereira-25678b34a/"target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/CrissPereira" target="_blank" rel="noopener noreferrer">GitHub</a>      
+            <div class="links">
+                <a href="https://www.linkedin.com/in/cristian-pereira-25678b34a/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/CrissPereira" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
         </section>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
