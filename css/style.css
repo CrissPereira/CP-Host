@@ -40,11 +40,22 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 /*estilo do logo*/
 .iconi_menu {
     display: none;
+}
+
+/*estilo da tradução*/
+.traducao {
+    display: flex;
+    gap: 20px;
 }
 
 /*estilo do nav*/
@@ -269,12 +280,21 @@ footer {
     padding: 20px;
 }
 
+/*estilo do título do footer*/
+footer h2 {
+    margin-bottom: 30px;
+}
+/*estilo do parágrafo do footer*/
+footer p {
+    margin-bottom: 10px;
+}
+
 /*estilo dos links do footer*/
 .links {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /*estilo dos links do footer*/
@@ -293,6 +313,36 @@ footer {
 
 /*Ajuste para telas menores*/
 @media (max-width: 830px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--secundary-color);
+        border-radius: 5px;
+        padding: 10px;
+        gap: 5px;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+    }
+
+    nav a {
+        border: 1px solid var(--background-color);
+        width: 100%;
+        padding: 5px;
+    }
+
+    .minimizar {
+        display: none;
+    }
+
+    .iconi_menu {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-right: 20px;
+    }
 
     .servicos {
         flex-direction: column;
@@ -325,33 +375,11 @@ footer {
 /*Ajuste para telas menores que 720px*/
 @media(max-width: 720px) {
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--secundary-color);
-        border-radius: 5px;
-        padding: 10px;
-        gap: 10px;
-        position: absolute;
-        top: 80px;
-        right: 0px;
-    }
-
-    .minimizar {
-        display: none;
-    }
-
-    .iconi_menu {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin-right: 20px;
-    }
+    
 
     .plano {
-    max-width: 280px;
-    
-}
+        max-width: 280px;
+
+    }
 
 }
